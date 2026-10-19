@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · L. América Chi</title>
+<meta name="description" content="Computational Biophysics of Biomolecular Interactions Lab – predicting and designing how biomolecules recognize each other, and how mutations rewire that recognition.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="index.html">Home</a><a class="here" href="research.html">Research</a><a href="CV/4_CV_full_BiophysicsUNAM2026.pdf">CV</a></nav>
+
+<p class="note">🧬 I am building the <b>Computational Biophysics of Biomolecular Interactions (CBBI) Lab</b>.
+Interested in joining, collaborating, or supporting this work? <a href="mailto:achi@uidaho.edu">Get in touch</a>.</p>
+
+<header>
+  <img class="photo" src="ProfilePhoto/photo.jpg" alt="L. América Chi">
+  <div>
+    <h1>Computational Biophysics of Biomolecular Interactions (CBBI) Lab</h1>
+    <p class="lab">Decoding and designing biomolecular interactions</p>
+    <p class="role">L. América Chi, PhD · <a href="mailto:achi@uidaho.edu">achi@uidaho.edu</a></p>
+  </div>
+</header>
+<p class="statement">My research seeks to <b>predict how biomolecules recognize each other, how mutations rewire that recognition,
+and how to design molecules that exploit it</b>, by combining physics-based simulations with machine learning.</p>
+
+<p class="toc">On this page:
+  <a href="#background">Background</a> ·
+  <a href="#mechanisms">1. Mechanisms</a> ·
+  <a href="#prediction">2. Prediction</a> ·
+  <a href="#design">3. Design</a></p>
+
+<h2 id="background">Background: one mutation can change everything, and we cannot test them all</h2>
+<p>A single amino-acid change can let a virus <b>escape an antibody</b> or a host restriction factor, shift the color a photoreceptor
+detects, or alter how a drug binds its target. The number of possible variants is enormous, and experiments can only test a small
+fraction of them. Physics-based simulations reveal <i>why</i> a mutation matters, but are expensive; machine learning is fast, but
+needs good data and often lacks a physical explanation.</p>
+<p><b>I combine both</b>: molecular simulations to understand mechanisms, and data-driven models to scale those insights to
+thousands of variants and candidate molecules.</p>
+
+<p>I approach this problem at three levels:</p>
+
+<h3 id="mechanisms">1. Uncover the molecular mechanisms through which mutations change interactions</h3>
+<p class="q">(What happens, atom by atom, when a mutation changes how two molecules interact?)</p>
+<p>Using molecular dynamics, enhanced sampling, and structural modeling, I study how mutations reshape interfaces and conformational
+ensembles. With experimental collaborators, I built AI-based structural models of the interface between the antiviral protein
+<b>MxA</b> and the Thogotovirus nucleoprotein, identifying mutations that drive restriction or viral escape, later
+confirmed in viral mini-replicon assays (<a href="https://doi.org/10.64898/2026.08.07.743570">bioRxiv 2026</a>).
+I have also studied the molecular basis of the <b>spectral shift in zebrafish cone opsins</b>
+(<a href="https://doi.org/10.1101/2024.09.24.614827">bioRxiv 2024</a>) and anion selectivity and fluoride transport in
+<b>CLC transporters</b> (<a href="https://doi.org/10.1007/164_2022_593">Springer 2022</a>).</p>
+<!-- Figure idea: <img src="figures/mxa.png" alt="MxA–nucleoprotein interface" style="width:100%"> -->
+
+<h3 id="prediction">2. Predict the energetic impact of mutations with physics + machine learning</h3>
+<p class="q">(Can we predict, quickly and accurately, which mutations matter?)</p>
+<p>Fast empirical tools such as FoldX can scan thousands of mutations, but their errors limit their use. I showed that combining
+<b>molecular dynamics with FoldX</b> can predict SARS-CoV-2 antibody-escape mutations, benchmarked against large-scale experimental
+data (<a href="https://doi.org/10.1038/s41598-024-72491-z">Scientific Reports 2024</a>). Building on this, we trained
+<b>neural networks that correct FoldX free-energy estimates</b>, substantially improving predictions for single and multiple
+mutations (<a href="https://doi.org/10.1021/acsomega.6c01409">ACS Omega 2026</a>).
+Because these models are only as good as their data, I developed <b>PepXPro</b>, a framework to curate, generate, and optimize
+structure–affinity datasets of protein–peptide complexes (<a href="https://doi.org/10.64898/2026.08.09.743757">bioRxiv 2026</a>).</p>
+
+<h3 id="design">3. Design peptides and small molecules that exploit these interactions</h3>
+<p class="q">(Can we use this understanding to design new therapeutics?)</p>
+<p>I apply these tools to molecular design: <b>de novo peptides</b> targeting resistin
+(<a href="https://doi.org/10.1007/s00894-020-4338-3">J. Mol. Model. 2020</a>); protecting the bioactive peptide Ang-(1-7) with
+<b>PAMAM dendrimer nanocarriers</b> (<a href="https://doi.org/10.1007/s10822-022-00470-5">J. Comput.-Aided Mol. Des. 2022</a>)
+and understanding its oligomerization (<a href="https://doi.org/10.1021/acs.jcim.3c00478">J. Chem. Inf. Model. 2023</a>);
+and <b>virtual screening of α5β1-integrin ligands</b>, which supported a provisional patent filing (2025).
+Currently, I design <b>antimalarial PROTACs</b> and map the ubiquitin–proteasome system of <i>Plasmodium falciparum</i> in a
+U.S. Department of Defense–funded project, and search for antifungal compounds against potato pathogens.</p>
+
+<h2>Toolbox</h2>
+<p>Molecular dynamics (GROMACS) · enhanced sampling (metadynamics, replica exchange, PLUMED) · binding free energies ·
+docking and virtual screening · AlphaFold and structural modeling · neural networks and ML · Python · HPC (CPU/GPU)</p>
+
+<p class="muted" style="margin-top:40px">Last updated: October 2026</p>
+</main>
+</body>
+</html>
