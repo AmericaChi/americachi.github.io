@@ -3,6 +3,6 @@
 Static single-page site (`index.html`), published with GitHub Pages.
 
 - `index.html` – the whole page
-- `photo.jpg` – profile photo (add)
-- `cv.pdf` – public CV without personal data (add)
+- `ProfilePhoto/photo.jpg` – web-sized profile photo (original kept locally in `private/`)
+- `CV/` – public CV linked from the page
 - `private/` – local-only files (ignored by git, never published)
