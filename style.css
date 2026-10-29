@@ -32,3 +32,9 @@ header .lab { font-size: 17px; font-style: italic; margin: 6px 0; }
 main p, main li { text-align: justify; hyphens: auto; }
 header p, nav, .note, .toc, .q, .role { text-align: left; }
 @media (max-width: 520px) { header p { text-align: center; } }
+.posters { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+.poster { display: flex; flex-direction: column; gap: 8px; color: var(--text); font-size: 14px; line-height: 1.45; }
+.poster:hover { text-decoration: none; }
+.poster img { width: 100%; border: 1px solid var(--line); border-radius: 6px; transition: transform .15s; }
+.poster:hover img { transform: scale(1.02); }
+.poster span { text-align: left; }
