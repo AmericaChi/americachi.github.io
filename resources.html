@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resources · L. América Chi</title>
+<meta name="description" content="Open-source tools by L. América Chi: PROTFIG, publication-quality biomolecular figures with one command.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="index.html">Home</a><a href="research.html">Research</a><a class="here" href="resources.html">Resources</a><a href="CV/4_CV_full_BiophysicsUNAM2026.pdf">CV</a></nav>
+
+<h1>Resources</h1>
+<p>Open-source tools I have developed for computational biophysics and structural biology.</p>
+
+<h2 id="protfig">PROTFIG</h2>
+<p class="statement" style="font-size:19px"><b>Publication-quality biomolecular figures with one command.</b></p>
+<p>PROTFIG runs PyMOL in the background and turns a structure (a PDB/mmCIF file, a PDB code, or a PyMOL session)
+into a finished figure panel. You choose a style, a <i>preset</i>, and PROTFIG detects the ligand or binding partner,
+selects the site residues, finds hydrogen bonds, places the labels, and orients the camera.</p>
+
+<div class="gallery">
+  <figure><img src="Resources/protfig/site__8G66.jpg" alt="Binding site of PDB 8G66" loading="lazy"><figcaption><code>site</code> · 8G66</figcaption></figure>
+  <figure><img src="Resources/protfig/pocket__8G66.jpg" alt="Ligand in its pocket, PDB 8G66" loading="lazy"><figcaption><code>pocket</code> · 8G66</figcaption></figure>
+  <figure><img src="Resources/protfig/electrostatic__8DZ0.jpg" alt="Electrostatic surface, PDB 8DZ0" loading="lazy"><figcaption><code>electrostatic</code> · 8DZ0</figcaption></figure>
+  <figure><img src="Resources/protfig/site_faded__8DZ1_M49I.jpg" alt="Binding site with distances and mutation, PDB 8DZ1" loading="lazy"><figcaption><code>site_faded</code> · 8DZ1 M49I</figcaption></figure>
+  <figure><img src="Resources/protfig/interface_closeup__1YCR.jpg" alt="MDM2–p53 peptide interface, PDB 1YCR" loading="lazy"><figcaption><code>interface_closeup</code> · 1YCR</figcaption></figure>
+  <figure><img src="Resources/protfig/overview__8G66.jpg" alt="Whole complex colored by chain, PDB 8G66" loading="lazy"><figcaption><code>overview</code> · 8G66</figcaption></figure>
+  <figure><img src="Resources/protfig/membrane__3P0G.jpg" alt="Membrane protein in a lipid bilayer, PDB 3P0G" loading="lazy"><figcaption><code>membrane</code> · 3P0G</figcaption></figure>
+  <figure><img src="Resources/protfig/plddt__AF-O15552.jpg" alt="AlphaFold model colored by pLDDT" loading="lazy"><figcaption><code>plddt</code> · AlphaFold model</figcaption></figure>
+</div>
+
+<h3>As simple as one line</h3>
+<pre><code>protfig 8G66 --preset site --chains B,C,A               # ligand binding site
+protfig 1YCR --preset interface_closeup                 # protein–peptide interface
+protfig my_protein.pdb --preset illustrative --bg transparent   # your own file
+protfig --list                                          # see all 19 presets</code></pre>
+<p>Each figure comes with a 300 dpi image, the PyMOL session to fine-tune it by hand, editable SVG labels,
+and text files listing the site residues and hydrogen bonds.</p>
+
+<div class="cite">
+  <a href="https://doi.org/10.64898/2026.10.20.760606"><img src="Resources/protfig/preprint_qr.png" alt="QR code to the PROTFIG preprint on bioRxiv"></a>
+  <div>
+    <p><b>Read the preprint</b><br>
+    <span class="me">Chi, L. A.</span> (2026). PROTFIG: one-command, publication-quality biomolecular figures. <i>bioRxiv</i>.
+    <a href="https://doi.org/10.64898/2026.10.20.760606">doi:10.64898/2026.10.20.760606</a></p>
+    <p><a href="https://github.com/AmericaChi/PROTFIG"><b>Get the code on GitHub →</b></a> · MIT license</p>
+  </div>
+</div>
+
+<p class="muted" style="margin-top:40px">Last updated: October 2026</p>
+</main>
+</body>
+</html>

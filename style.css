@@ -39,3 +39,12 @@ header p, nav, .note, .toc, .q, .role { text-align: left; }
 .poster:hover img { transform: scale(1.02); }
 .poster span { text-align: left; }
 .soon { display: inline-block; font-size: 12px; font-weight: 600; color: #fff; background: #c2410c; border-radius: 4px; padding: 1px 6px; margin-right: 4px; vertical-align: 1px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 14px; margin: 20px 0; }
+.gallery figure { margin: 0; }
+.gallery img { width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+.gallery figcaption { font-size: 13px; color: var(--muted); text-align: center; margin-top: 4px; }
+pre { background: var(--note); padding: 12px 14px; border-radius: 6px; overflow-x: auto; font-size: 13.5px; line-height: 1.5; }
+.cite { display: flex; gap: 20px; align-items: center; border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin-top: 24px; }
+.cite img { width: 110px; flex: none; border-radius: 4px; }
+.cite p { text-align: left; margin: 4px 0; }
+@media (max-width: 520px) { .cite { flex-direction: column; text-align: center; } }
