@@ -38,3 +38,4 @@ header p, nav, .note, .toc, .q, .role { text-align: left; }
 .poster img { width: 100%; border: 1px solid var(--line); border-radius: 6px; transition: transform .15s; }
 .poster:hover img { transform: scale(1.02); }
 .poster span { text-align: left; }
+.soon { display: inline-block; font-size: 12px; font-weight: 600; color: #fff; background: #c2410c; border-radius: 4px; padding: 1px 6px; margin-right: 4px; vertical-align: 1px; }
